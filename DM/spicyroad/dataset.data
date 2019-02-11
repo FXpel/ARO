@@ -1,0 +1,44 @@
+data;
+set VILLES:= Chine Java Tana Trebizonde Tunis Famagouste Candie Alexandrie Venise Genes;
+set DEPARTS:= Chine Java;
+set ARRIVEES:= Venise Genes;
+param : ROUTES : cout_distribution :=
+  Chine Tana 0.5
+  Chine Trebizonde 0.5
+  Chine Tunis 0.9
+  Chine Famagouste 0.2
+  Chine Alexandrie 0.9
+  Chine Venise 1.1
+  Chine Genes 1.2
+  Java Trebizonde 0.3
+  Java Tunis 0.5
+  Java Famagouste 0.9
+  Java Candie 0.7
+  Java Alexandrie 0.5
+  Java Venise 1.0
+  Java Genes 1.1
+  Tana Venise 0.8
+  Tana Genes 0.3
+  Trebizonde Venise 0.7
+  Trebizonde Genes 0.5
+  Tunis Venise 0.9
+  Tunis Genes 0.7
+  Famagouste Venise 1.0
+  Candie Venise 0.6
+  Alexandrie Venise 0.7
+  Alexandrie Genes 0.5
+;
+param : debit_max :=
+Chine 15000
+Java 20000
+Tana 2800
+Trebizonde 3000
+Tunis 2000
+Famagouste 2200
+Candie 4000
+Alexandrie 3300
+;
+param : ventes_min:=
+Venise 13500
+Genes 9900
+;

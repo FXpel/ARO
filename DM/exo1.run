@@ -1,0 +1,4 @@
+model exo1.mod;
+data  exo1.dat;
+
+solve;

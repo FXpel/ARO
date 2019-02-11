@@ -1,0 +1,43 @@
+data;
+set PAYS:= Chine Java; 
+set Republiques:=Venise Gênes; 
+set Comptoirs:=Tana Trébizonde Tunis Famagouste Candie Alexandrie;
+set Fournisseurs:=PAYS union Comptoirs;
+set Recepteurs = Comptoirs union Republiques;
+param routes:=PAYS union Republiques union Comptoirs;
+
+param prix_vente=2.5;
+param prix_achat=0.3;
+param satisfaction:=
+Chine  15000 
+Java   20000 ;
+param limites_comptoirs:=
+Tana       2800
+Trébizonde 3000
+Tunis      2000
+Famagouste 2200
+Candie     4000
+Alexandrie 3300;
+param est_dispo :
+			Chine Java Tana Trébizonde Tunis Famagouste Candie Alexandrie
+Tana		1     0     0       0        0      0          0        0
+Trébizonde	1     1     0       0        0      0          0        0 
+Tunis 		1     1     0       0        0      0          0        0
+Famagouste  1     1     0       0        0      0          0        0
+Candie      0     1     0       0        0      0          0        0
+Alexandrie  1     1     0       0        0      0          0        0
+Venise      1     1     1       1        1      1          1        1
+Genes       1     1     1       1        1      0          0        1;
+param cout_distribution:=
+			Chine Java Tana Trébizonde Tunis Famagouste Candie Alexandrie
+Tana		0.5	   0    0       0         0     0         0      0
+Trébizonde	0.5	  0.3   0       0         0     0         0      0 
+Tunis 		0.9   0.5   0       0         0     0         0      0
+Famagouste  0.2   0.9   0       0         0     0         0      0 
+Candie      0     0.7   0       0         0     0         0      0 
+Alexandrie  0.9   0.5   0       0         0     0         0      0
+Venise      1.1   1.0   0.8     0.7       0.9   1.0       0.6    0.7
+Genes       1.2   1.1   0.3     0.5       0.7   0         0      0.5  ;
+
+
+

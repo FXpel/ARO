@@ -1,0 +1,4 @@
+$ gcc -Wall -g -std=c99 testAnalyseur.c graphe.c -o testAnalyseur
+
+dot -Tps test.dot -o test.ps.
+evince test.ps (visualiser le fichier.ps)

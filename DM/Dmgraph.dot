@@ -1,0 +1,26 @@
+digraph {
+Chine -> Venise;
+Chine -> Tana;
+Chine -> Trebizonde;
+Chine -> Tunis;
+Chine -> Famagouste;
+Chine -> Alexandrie;
+Chine -> Genes;
+Java -> Venise;
+Java -> Trebizonde;
+Java -> Tunis;
+Java -> Famagouste;
+Java -> Candie;
+Java -> Alexandrie;
+Java -> Genes;
+Tana -> Venise;
+Tana -> Genes;
+Trebizonde -> Venise;
+Trebizonde -> Genes;
+Tunis -> Venise;
+Tunis -> Genes;
+Famagouste -> Venise;
+Candie -> Venise;
+Alexandrie  Venise;
+Alexandrie  Genes;
+}
